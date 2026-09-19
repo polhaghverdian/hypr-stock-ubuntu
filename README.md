@@ -7,8 +7,9 @@ Install the packages:
 sudo apt update && sudo apt install hyprland hypridle hyprlock hyprpaper hyprpolkitagent hyprpicker waybar wofi swayosd wlsunset jq kitty fonts-font-awesome brightnessctl playerctl wl-clipboard wofi uwsm git ubuntu-wallpapers
 ```
 
-Disable waybar from starting with systemd:
+Disable waybar and hyprpaper from starting with systemd:
 systemctl --user --global disable waybar.service
+systemctl --user --global disable hyprpaper.service
 
 Clone this repo to bring in copies of the needed config files and scripts:
 ```sh
