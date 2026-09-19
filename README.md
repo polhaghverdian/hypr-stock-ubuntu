@@ -7,6 +7,9 @@ Install the packages:
 sudo apt update && sudo apt install hyprland hypridle hyprlock hyprpaper hyprpolkitagent hyprpicker waybar wofi swayosd wlsunset jq kitty fonts-font-awesome brightnessctl playerctl wl-clipboard wofi uwsm git ubuntu-wallpapers
 ```
 
+Disable waybar from starting with systemd:
+systemctl --user --global disable waybar.service
+
 Clone this repo to bring in copies of the needed config files and scripts:
 ```sh
 git clone https://github.com/polhaghverdian/hypr-stock-ubuntu.git
