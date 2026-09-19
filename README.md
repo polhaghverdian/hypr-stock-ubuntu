@@ -4,7 +4,7 @@
 
 Install the packages:
 ```sh
-sudo apt update && sudo apt install hyprland hypridle hyprlock hyprpaper hyprpolkitagent hyprpicker waybar wofi swayosd foot wlsunset jq fonts-font-awesome brightnessctl playerctl wl-clipboard wofi uwsm git
+sudo apt update && sudo apt install hyprland hypridle hyprlock hyprpaper hyprpolkitagent hyprpicker waybar wofi swayosd wlsunset jq kitty fonts-font-awesome brightnessctl playerctl wl-clipboard wofi uwsm git ubuntu-wallpapers
 ```
 
 Clone this repo to bring in copies of the needed config files and scripts:
@@ -34,7 +34,7 @@ cp -ir foot hypr waybar wofi ~/.config
 | `waybar` | Displays a status bar across the top of the screen. |
 | `wofi` | Displays menus for things like launching applications. |
 | `swayosd` | Shows an on-screen-display for things like brightness and volume. |
-| `foot` | Terminal program which works well with Hyprland; e.g. no title bar. |
+| `kitty` | Terminal program which works well with Hyprland; e.g. no title bar. |
 | `wlsunset` | Changes the color temperature of the display; i.e. a night light. |
 | `jq` | Parses the output from Hyprland tools inside some of the included scripts. |
 | `fonts-font-awesome` | Provides icons for Waybar and the system menu. |
