@@ -19,7 +19,7 @@ systemctl disable wpa_supplicant.service
 git clone https://github.com/polhaghverdian/hypr-stock-ubuntu.git
 ```
 
-5. Copy the files into their canonical paths:
+4. Copy the files into their canonical paths:
 ```sh
 cd hypr-stock-ubuntu/dotfiles
 mkdir -p ~/.local/bin
@@ -28,7 +28,7 @@ cp -i bin/* ~/.local/bin
 cp -ir foot hypr waybar wofi ~/.config
 ```
 
-6. Add following at the end of the .bashrc file
+5. Add following at the end of the .bashrc file
 ```
 if uwsm check may-start && uwsm select; then
 	exec uwsm start default
