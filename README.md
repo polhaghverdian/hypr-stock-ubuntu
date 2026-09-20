@@ -23,9 +23,9 @@ systemctl mask systemd-networkd-wait-online.service
 
 4. Dowload bluetui and impala for bluetooth and Wifi management
 ```
-sudo wget -O /usr/local/bin/bluetui https://github.com/pythops/bluetui/releases/download/v0.8.1/bluetui-x86_64-linux-musl && \
-sudo wget -O /usr/local/bin/impala https://github.com/pythops/impala/releases/download/v0.9.0/impala-x86_64-unknown-linux-musl && \
-sudo chmod +x /usr/local/bin/bluetui && sudo chmod +x /usr/local/bin/impala
+wget -O /usr/local/bin/bluetui https://github.com/pythops/bluetui/releases/download/v0.8.1/bluetui-x86_64-linux-musl && \
+wget -O /usr/local/bin/impala https://github.com/pythops/impala/releases/download/v0.9.0/impala-x86_64-unknown-linux-musl && \
+chmod +x /usr/local/bin/bluetui && chmod +x /usr/local/bin/impala
 ```
 5. Clone this repo to bring in copies of the needed config files and scripts:
 ```sh
