@@ -58,7 +58,8 @@
         "format-ethernet": "",
         "format-disconnected": "",
         "tooltip-format": "{essid} ({signalStrength}%)",
-        "on-click": "env XDG_CURRENT_DESKTOP=GNOME gnome-control-center wifi || env XDG_CURRENT_DESKTOP=GNOME gnome-control-center network"
+        "on-click": "kitty --start-as=fullscreen impala",
+        "on-click-right": "kitty --start-as=fullscreen nmtui"
     },
 
     "bluetooth": {
@@ -68,7 +69,8 @@
         "format-connected": "",
         "tooltip-format": "{controller_alias}\t{controller_address}",
         "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
-        "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}"
+        "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+        "on-click": "kitty --start-as=fullscreen bluetui"
     },
 
     "battery": {
