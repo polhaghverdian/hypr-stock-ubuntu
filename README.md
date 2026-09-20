@@ -4,20 +4,15 @@
 
 1. Install the packages:
 ```sh
-sudo apt update && sudo apt install hyprland hypridle hyprlock hyprpaper hyprpolkitagent hyprpicker waybar wofi swayosd wlsunset jq kitty fonts-font-awesome brightnessctl playerctl wl-clipboard wofi uwsm git ubuntu-wallpapers bluetooth network-manager-iwd
-```
-2. Change from networkd, to NetworkManager as default manager 
-```
-netplan set renderer=NetworkManager
-netplan apply
+sudo apt update && sudo apt install hyprland hypridle hyprlock hyprpaper hyprpolkitagent hyprpicker waybar wofi swayosd wlsunset jq kitty fonts-font-awesome brightnessctl playerctl wl-clipboard uwsm git ubuntu-wallpapers bluetooth network-manager-iwd
 ```
 
-3. Disable waybar and hyprpaper from starting with systemd:
+2. Disable waybar and hyprpaper from starting with systemd:
 ```
 systemctl --user --global disable waybar.service && systemctl --user --global disable hyprpaper.service 
 ```
 
-4. Clone this repo to bring in copies of the needed config files and scripts:
+3. Clone this repo to bring in copies of the needed config files and scripts:
 ```sh
 git clone https://github.com/polhaghverdian/hypr-stock-ubuntu.git
 ```
