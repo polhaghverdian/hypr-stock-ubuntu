@@ -11,7 +11,13 @@ sudo apt update && sudo apt install hyprland hypridle hyprlock hyprpaper hyprpol
 ```
 systemctl --user --global disable waybar.service && \
 systemctl --user --global disable hyprpaper.service && \
-systemctl disable wpa_supplicant.service 
+systemctl disable wpa_supplicant.service
+```
+
+2.1 OPTIONAL - Disable systemd-networkd because of stalling boot
+```
+systemctl disable systemd-networkd-wait-online.service && \
+systemctl mask systemd-networkd-wait-online.service
 ```
 
 3. Clone this repo to bring in copies of the needed config files and scripts:
