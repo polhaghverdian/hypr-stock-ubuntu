@@ -2,27 +2,27 @@
 
 ## Quick Start
 
-Install the packages:
+1. Install the packages:
 ```sh
 sudo apt update && sudo apt install hyprland hypridle hyprlock hyprpaper hyprpolkitagent hyprpicker waybar wofi swayosd wlsunset jq kitty fonts-font-awesome brightnessctl playerctl wl-clipboard wofi uwsm git ubuntu-wallpapers bluetooth network-manager-iwd
 ```
-Change from networkd, to NetworkManager as default manager 
+2. Change from networkd, to NetworkManager as default manager 
 ```
 netplan set renderer=NetworkManager
 netplan apply
 ```
 
-Disable waybar and hyprpaper from starting with systemd:
+3. Disable waybar and hyprpaper from starting with systemd:
 ```
 systemctl --user --global disable waybar.service && systemctl --user --global disable hyprpaper.service 
 ```
 
-Clone this repo to bring in copies of the needed config files and scripts:
+4. Clone this repo to bring in copies of the needed config files and scripts:
 ```sh
 git clone https://github.com/polhaghverdian/hypr-stock-ubuntu.git
 ```
 
-Copy the files into their canonical paths:
+5. Copy the files into their canonical paths:
 ```sh
 cd hypr-stock-ubuntu/dotfiles
 mkdir -p ~/.local/bin
