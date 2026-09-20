@@ -21,12 +21,16 @@ systemctl disable systemd-networkd-wait-online.service && \
 systemctl mask systemd-networkd-wait-online.service
 ```
 
-4. Clone this repo to bring in copies of the needed config files and scripts:
+4. Dowload bluetui and impala for bluetooth and Wifi management
+```
+sudo wget -O /usr/local/bin/bluetui https://github.com/pythops/bluetui/releases/download/v0.8.1/bluetui-x86_64-linux-musl
+```
+5. Clone this repo to bring in copies of the needed config files and scripts:
 ```sh
 git clone https://github.com/polhaghverdian/hypr-stock-ubuntu.git
 ```
 
-5. Copy the files into their canonical paths:
+6. Copy the files into their canonical paths:
 ```sh
 cd hypr-stock-ubuntu/dotfiles
 mkdir -p ~/.local/bin
@@ -35,7 +39,7 @@ cp -i bin/* ~/.local/bin
 cp -ir foot hypr waybar wofi ~/.config
 ```
 
-6. Add following at the end of the .bashrc file
+7. Add following at the end of the .bashrc file
 ```
 if uwsm check may-start && uwsm select; then
 	exec uwsm start default
