@@ -9,8 +9,8 @@ sudo apt update && sudo apt install hyprland hypridle hyprlock hyprpaper hyprpol
 
 2. Disable waybar,hyprpaper and wpa_supplicant (replaced with iwd) from starting with systemd:
 ```
-systemctl --user --global disable waybar.service
-systemctl --user --global disable hyprpaper.service
+systemctl --user --global disable waybar.service && \
+systemctl --user --global disable hyprpaper.service && \
 systemctl disable wpa_supplicant.service 
 ```
 
