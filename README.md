@@ -31,7 +31,7 @@ cp -i bin/* ~/.local/bin
 cp -ir foot hypr waybar wofi ~/.config
 ```
 
-Add following at the end of the .bashrc file
+6. Add following at the end of the .bashrc file
 ```
 if uwsm check may-start && uwsm select; then
 	exec uwsm start default
