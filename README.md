@@ -7,11 +7,12 @@
 sudo apt update && sudo apt install hyprland hypridle hyprlock hyprpaper hyprpolkitagent hyprpicker waybar wofi swayosd wlsunset jq kitty fonts-font-awesome brightnessctl playerctl wl-clipboard uwsm git ubuntu-wallpapers bluetooth network-manager-iwd
 ```
 
-2. Disable waybar,hyprpaper and wpa_supplicant (replaced with iwd) from starting with systemd:
+2. Disable waybar,hyprpaper, networkd and wpa_supplicant (replaced with iwd) from starting with systemd:
 ```
 systemctl --user --global disable waybar.service && \
 systemctl --user --global disable hyprpaper.service && \
-systemctl disable wpa_supplicant.service
+systemctl disable wpa_supplicant.service && \
+systemctl disable systemd-networkd.service && systemctl mask systemd-networkd.service
 ```
 
 3. **[OPTIONAL]**: Disable systemd-networkd wait online service, because of stalling boot
