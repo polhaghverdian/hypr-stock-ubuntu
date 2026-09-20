@@ -14,7 +14,7 @@ systemctl --user --global disable hyprpaper.service && \
 systemctl disable wpa_supplicant.service
 ```
 
-3. **[OPTIONAL]**: Disable systemd-networkd because of stalling boot
+3. **[OPTIONAL]**: Disable systemd-networkd wait online service, because of stalling boot
 ```
 systemctl disable systemd-networkd-wait-online.service && \
 systemctl mask systemd-networkd-wait-online.service
