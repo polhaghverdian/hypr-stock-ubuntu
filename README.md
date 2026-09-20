@@ -6,6 +6,11 @@ Install the packages:
 ```sh
 sudo apt update && sudo apt install hyprland hypridle hyprlock hyprpaper hyprpolkitagent hyprpicker waybar wofi swayosd wlsunset jq kitty fonts-font-awesome brightnessctl playerctl wl-clipboard wofi uwsm git ubuntu-wallpapers bluetooth network-manager-iwd
 ```
+Change from networkd, to NetworkManager as default manager 
+```
+netplan set renderer=NetworkManager
+netplan apply
+```
 
 Disable waybar and hyprpaper from starting with systemd:
 ```
