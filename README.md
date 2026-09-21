@@ -4,7 +4,7 @@
 
 1. Install the packages:
 ```sh
-sudo apt update && sudo apt install hyprland hyprland-qtutils hypridle hyprlock hyprpaper hyprpolkitagent hyprpicker waybar wofi swayosd wlsunset jq kitty fonts-font-awesome brightnessctl playerctl wl-clipboard uwsm git ubuntu-wallpapers bluetooth network-manager-iwd pipewire
+sudo apt update && sudo apt install hyprland hyprland-qtutils hypridle hyprlock hyprpaper hyprpolkitagent hyprpicker waybar wofi swayosd wlsunset jq kitty fonts-font-awesome brightnessctl playerctl wl-clipboard uwsm git ubuntu-wallpapers bluetooth network-manager-iwd pipewire pavucontrol
 ```
 
 2. Disable waybar,hyprpaper, networkd and wpa_supplicant (replaced with iwd) from starting with systemd:
