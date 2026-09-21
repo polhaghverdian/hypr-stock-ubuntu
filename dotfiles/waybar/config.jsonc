@@ -12,7 +12,7 @@
     ],
     "modules-right": [
         "tray",
-        "pulseaudio",
+        "wireplumber",
         "custom/nightlight",
         "power-profiles-daemon",
         "bluetooth",
@@ -41,16 +41,15 @@
         "spacing": 10
     },
 
-    "pulseaudio": {
-        "format": "{icon}",
+    "wireplumber": {
+        "format": "{volume}% {icon}",
         "format-bluetooth": "{icon}",
-        "format-muted": "",
         "format-icons": {
             "default": ["", "", ""]
         },
-        "on-click": "env XDG_CURRENT_DESKTOP=GNOME gnome-control-center sound",
+        "on-click": "pavucontrol",
         "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
-        "tooltip-format": "Volume: {volume}%"
+        "scroll-step": 5
     },
 
     "network": {
